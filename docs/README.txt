@@ -14,13 +14,13 @@ Setting Up Your VHOST
 The following is a sample VHOST you might want to consider for your project.
 
 <VirtualHost *:80>
-   DocumentRoot "/Users/smartinez/Sites/zend/zf12_loudbites/public"
-   ServerName zf12_loudbites.local
+   DocumentRoot "/Users/smartinez/Sites/zend/loudbites/public"
+   ServerName loudbites.local
 
    # This should be omitted in the production environment
    SetEnv APPLICATION_ENV development
 
-   <Directory "/Users/smartinez/Sites/zend/zf12_loudbites/public">
+   <Directory "/Users/smartinez/Sites/zend/loudbites/public">
        Options Indexes MultiViews FollowSymLinks
        AllowOverride All
        Order allow,deny
