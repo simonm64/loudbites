@@ -11,6 +11,21 @@
           <actionMethod actionName="index"/>
         </controllerFile>
         <controllerFile controllerName="Error"/>
+        <controllerFile controllerName="Account">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="success"/>
+          <actionMethod actionName="new"/>
+          <actionMethod actionName="activate"/>
+        </controllerFile>
+        <controllerFile controllerName="Artist">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="listAllArtist"/>
+          <actionMethod actionName="artistaffiliatecontent"/>
+          <actionMethod actionName="profile"/>
+        </controllerFile>
+        <controllerFile controllerName="ApplicationError">
+          <actionMethod actionName="index"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory enabled="false"/>
       <layoutsDirectory enabled="false"/>
@@ -24,6 +39,33 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Error">
             <viewScriptFile forActionName="error"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Account">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Account">
+            <viewScriptFile forActionName="success"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Account">
+            <viewScriptFile forActionName="new"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Account">
+            <viewScriptFile forActionName="activate"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Artist">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Artist">
+            <viewScriptFile forActionName="listaAllArtist"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Artist">
+            <viewScriptFile forActionName="artistaffiliatecontent"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Artist">
+            <viewScriptFile forActionName="profile"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="ApplicationError">
+            <viewScriptFile forActionName="index"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>

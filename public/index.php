@@ -22,5 +22,17 @@ $application = new Zend_Application(
     APPLICATION_ENV,
     APPLICATION_PATH . '/configs/application.ini'
 );
+
+require_once APPLICATION_PATH . '/configs/routing.php';
+
+/*Custom error handler*/
+$FrontController = Zend_Controller_Front::getInstance();
+$plugin = new Zend_Controller_Plugin_ErrorHandler();
+$plugin->setErrorHandlerController('ApplicationError');
+$plugin->setErrorHandlerAction('index');
+$FrontController->registerPlugin($plugin);
+
 $application->bootstrap()
             ->run();
+            
+	
